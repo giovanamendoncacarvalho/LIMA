@@ -1,0 +1,16 @@
+body{
+    background-color: #792eae;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+div {
+    background-color: blueviolet;
+}
+li{
+    color: rgb(218, 46, 237);
+}
+.texto{
+    color: rgb(104, 18, 113);
+    font-weight: bold;
+}
