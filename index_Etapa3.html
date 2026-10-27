@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PixelGear eSports Store</title>
+    <!-- Declação do CSS interno -->
+    <style>
+        h1,h2{
+            color:rgb(123, 23, 106);
+            text-align: center;
+            background-color: rgb(201, 69, 201);
+            font-size: 40px;
+        }
+        p{
+            font-size: 36px;
+            text-align: center;
+            color:rgb(180, 39, 156);
+        }
+                    :hover{
+                color:rgb(155, 8, 74);
+            }
+        a{            
+            text-align: center;
+            color: rgb(0, 128, 19);
+            font-size: 40px;
+            }
+            label{
+                text-align: center;
+                color:rgb(155, 8, 133);
+            }
+            .imagem{
+                width: 240px;
+                height:300px;
+                border-radius:20%;
+            }
+            .imagem:hover{
+                width: 240px;
+                height:300px;
+                border-radius:20%;
+                transform: scale(1.1);
+                border: 6px solid #7c20a0;
+            }
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+
+    <h1>PixelGear eSports Store</h1>
+    <section>
+        <h2>Nossa Missão</h2>
+        <p><strong>PixelGear</strong> é uma loja especializada em equipamentos de alta performance para a comunidade <i>gamer</i> e de eSports.</p>
+    </section>
+    <article>              
+        <h2> Visão Geral</h2>
+        <p><strong>PixelGear</strong> é uma loja especializada em equipamentos de alta performance para a comunidade <i>gamer</i> e de eSports.</p>
+    </article>
+    <article>
+        <h2>Destaques da Semana</h2>
+        <img class="imagem" alt="Kit Gamer BRX Branco" src="https://images.tcdn.com.br/img/img_prod/1427381/180_kit_gamer_brx_branco_teclado_led_mouse_2400_dpi_e_mouse_pad_2879_4_5e096241d2ca93db5961060a7fda3498.jpeg">
+        <img class="imagem" alt="Monitor Gamer Cosmo 21.5 Full HD 100Hz" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkEuNuYXCREBuU46SOrANc8KzJdCWSnberOa09N4nWg&s=10">
+        <img class="imagem" alt="Teclado LED Gamer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlhaSW_h4cKaot-fq5ANDbo9LumuTpzc6tkVyr3Tac6A&s=10">
+        <img class="imagem" alt="Mouse Gamer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCPyIoMr-VvLwfaKlC6Jp-qjGzlzH5cm9Fpt5axEmaCQ&s=10">
+        <img class="imagem" alt="Mouse Pad Gamer" src="https://cdn.awsli.com.br/300x300/954/954868/produto/375630415/69941--1--7s0ojka2qa.png">
+        <img class="imagem" alt="Monitor Gamer Cosmo 21.5 Full HD 100Hz" src="https://images.tcdn.com.br/img/img_prod/1039276/180_monitor_gamer_cosmo_21_5_full_hd_100hz_clanm_7056_1_1f8a65d3276818a4ec7eb23b5f6164d7.jpg">
+    </article>
+    <hr>
+    <a href="https://web.whatsapp.com/" target="_blank">
+        <strong>Contato via WhatsApp 📲</strong>
+    </a>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Felipe</td>
+            <td>16</td>
+        </tr>
+    </table>
+    <table border="2">
+        <tr>
+            <td><b>PC Gamer PixelGear</b></td>
+            <td>Intel Core™ i9-14900K</td>
+            <td>NVIDIA GeForce RTX™ 4090</td>
+            <td>64GB RAM DDR5</td>
+            <td>R$ 23.000,00</td>
+        </tr>
+        <tr>
+            <td><b>Teclado Mecânico PixelGear Apex Pro</b></td>
+            <td>Switches com acionamento ajustável</td>
+            <td>até 0,1mm.</td>
+            <td>Latência ultra-baixa</td>
+            <td><strong>R$ 699,00</strong></td>
+        </tr>
+    </table>
+    <h1>Dados do cliente</h1>
+    <hr>
+    <fieldset>
+        <legend><strong>1. Dados do Cliente</strong></legend>
+        <p>
+            <label for="nome">Nome Completo:*</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <br><br>
+        </p>
+        <p>
+            <label for="email">E-mail:*</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            <br><br>
+        </p>
+        <p>
+            <label for="whatsapp">WhatsApp:*</label><br>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+            <br><br>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend><strong>2. Configuração de Hardware</strong></legend>
+        <label for="gpu">Placa de Vídeo:</label>
+        <select id="gpu" name="gpu">
+            <option value="rtx4090">NVIDIA GeForce RTX™ 4090</option>
+            <option value="rtx4080">NVIDIA GeForce RTX™ 4080</option>
+            <option value="rx7900">AMD Radeon RX™ 7900 XTX</option>
+        </select>
+        <p>
+        </p>
+        <strong>Objetivo da maquina:</strong>
+        <input type="radio" name="streaming" id="objetivo" value="streaming">
+            <label for="streaming">Streaming</label><br>
+            <input type="radio" name="trabalho" id="trabalho" value="trabalho">
+            <label for="trabalho">Edição de Vídeos</label><br>
+        <br><br>
+    </fieldset>
+    <footer>
+        <p style="color:rgb(180, 39, 156)"> &copy; 2026 PixelGear eSports Store. Todos os direitos reservados.</p>
+    </footer>
+</html>
