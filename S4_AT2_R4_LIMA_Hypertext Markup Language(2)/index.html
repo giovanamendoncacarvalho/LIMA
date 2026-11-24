@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catálogo de Produtos para Loja de Artigos Esportivos</title>
+    <!-- Declação do CSS interno -->
+    <style>
+        h1,h2{
+            color:rgb(123, 23, 106);
+            text-align: center;
+            background-color: rgb(201, 69, 201);
+            font-size: 40px;
+        }
+        p{
+            font-size: 36px;
+            text-align: center;
+            color:rgb(180, 39, 156);
+        }
+        /* Muda a cor ao passar o mouse */
+                    :hover{
+                color:rgb(155, 8, 74);
+            }
+        a{            
+            text-align: center;
+            color: rgb(0, 128, 19);
+            font-size: 40px;
+            }
+            label{
+                text-align: center;
+                color:rgb(155, 8, 133);
+            }
+            /* Tamanho e borda das imagens dos produtos */
+            .imagem{
+                width: 240px;
+                height:300px;
+                border-radius:20%;
+            }
+            /* Efeito de zoom e borda ao passar o mouse na imagem */
+            .imagem:hover{
+                width: 240px;
+                height:300px;
+                border-radius:20%;
+                transform: scale(1.1);
+                border: 6px solid #7c20a0;
+            }
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+<!-- Apresentação da loja -->
+    <h1>Artigos Esportivos</h1>
+    <section>
+        <h2>Nossa Missão</h2>
+        <p><strong>Artigos Esportivos</strong> é uma loja especializada em equipamentos de alta performance para <i>atletas</i> e amantes de esportes.</p>
+    </section>
+    <article>              
+        <h2> Visão Geral</h2>
+        <p><strong>Artigos Esportivos</strong> é uma loja especializada em equipamentos de alta performance para <i>atletas</i> e amantes de esportes.</p>
+    </article>
+    <!-- Vitrine de imagens dos produtos -->
+    <article>
+        <h2>Destaques da Semana</h2>
+        <img class="imagem" alt="Bola de futebol da Copa 2026" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq12gRVaQ_95xHldy4h51o4UHsZxXdg2UsPgDGFrhixQ&s=10">
+        <img class="imagem" alt="Aparelho para abdomen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0gcO8aGVbjkH1Chb1FbjCZItwnzpYoXTGZaf_-K_TyA&s">
+        <img class="imagem" alt="Faixas Elásticas" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLC9YZ2luLM8hpQy1nzLrQYIYwqM6I60OjJ6cxnDjL-g&s">
+        <img class="imagem" alt="Bola de basquete" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6QFee93cFDwvegDZ2tlvQRfEoFGg6H2z3w6ywtrIRg&s=10">
+        <img class="imagem" alt="Camiseta do Brasil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMTNA7rhJNfGoytLgPXq6mOI0hXvvnQ6dC_xLDyaAIA&s=10">
+        <img class="imagem" alt="Tênis Olympikus" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT2VT2RRhpk6Bab8F-YqSIIcy4TaDceD8C3RoX9C7QRQQv42wp_MM8-rAAtJtxTw5CgJ7M5e8S0vmpWIC_yA21thh1nBSCrKZI_TUN7aWGXcuZbnf5qNThfMzqE_j46j30pOkqbc7B8BhE&usqp=CAc">
+    </article>
+    <hr>
+    <!-- Link externo para contato -->
+    <a href="https://web.whatsapp.com/" target="_blank">
+        <strong>Contato via WhatsApp 📲</strong>
+    </a>
+    <!-- Tabela de preços-->
+    <h1>tabela de produtos</h1>
+    <table border="2">
+        <tr>
+            <td><b>Bola Copa 2026</b></td>
+            <td>Profissional</td>
+            <td>Adidias</td>
+            <td>R$170,00</td>
+        </tr>
+        <tr>
+            <td><b>Faixas Elásticas</b></td>
+            <td>Amador</td>
+            <td>Ortho Pauher</td>
+            <td>R$20,00</td>
+        </tr>
+    <!-- Campos de cadastro do cliente e escolha de produto -->
+    </table>
+    <h1>Dados do cliente</h1>
+    <hr>
+    <fieldset>
+        <legend><strong>1. Dados do Cliente</strong></legend>
+        <p>
+            <label for="nome">Nome Completo:*</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <br><br>
+        </p>
+        <p>
+            <label for="email">E-mail:*</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            <br><br>
+        </p>
+        <p>
+            <label for="whatsapp">WhatsApp:*</label><br>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+            <br><br>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend><strong>2. Informações dos produtos</strong></legend>
+        <label for="produtos">Produtos:</label>
+        <select id="produtos" name="produtos">
+            <option value="olympikus">Tênis Olympikus</option>
+            <option value="Wilson">Bola de Basquete</option>
+            <option value="nike">Tênis Nike</option>
+        </select>
+        <p>
+        </p>
+        <strong>Objetivo dos produtos:</strong>
+        <input type="radio" name="Profissional" id="objetivo" value="streaming">
+            <label for="streaming">Profissional</label><br>
+            <input type="radio" name="Profissional" id="trabalho" value="trabalho">
+            <label for="trabalho">Amador</label><br>
+        <br><br>
+    </fieldset>
+    <!-- Rodapé da página -->
+    <footer>
+        <p style="color:rgb(180, 39, 156)"> &copy; 2026 Artigos Esportivos. Todos os direitos reservados.</p>
+    </footer>
+</html>
